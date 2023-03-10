@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anh Học Làm Web</title>
+	<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+	
+	<section>
+		<header>
+		<a href="#" class="logo">Anh Chị Em</a>
+		<div class="toggle" onclick = "toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="#" style="--i:1">Trang Chủ</a></li>
+			<li><a href="#" style="--i:2">Giới Thiệu</a></li>
+			<li><a href="#" style="--i:3">Thông Tin Chi Tiết</a></li>
+			<li><a href="#" style="--i:4">Nhiều Hơn</a></li>
+		</ul>
+	</header>
+	<div class="container">
+		<div class="box" style="--i:3">
+			<div class="imgBx">
+				<img src="./ảnh/du.jpg">
+			</div>
+		</div>
+		<div class="box" style="--i:4">
+			<div class="imgBx">
+				<img src="./ảnh/theanh1.jpg">
+			</div>
+		</div>
+		<div class="box" style="--i:5">
+			<div class="imgBx">
+				<img src="./ảnh/ty1.jpg">
+			</div>
+		</div>
+		<div class="box" style="--i:6">
+			<div class="imgBx">
+				<img src="./ảnh/say.jpg">
+			</div>
+		</div>
+	</div>
+<div class="footer">
+	<ul class="sci">
+		<li><a href="https://www.facebook.com/profile.php?id=100011194661516" style="--i:7">Facebook</a></li>
+		<li><a href="https://www.instagram.com/" style="--i:8">Instagram</a></li>
+		<li><a href="http://127.0.0.1:5500/index9.html" style="--i:9">Website</a></li>
+	</ul>
+	<p class="copyrightText">©Anh Test Code</p>
+</div>
+	</section>
+
+	<script>
+
+			let imgBx = document.querySelectorAll('.imgBx');
+			imgBx.forEach(popup => popup.addEventListener('click', ( ) => {
+				popup.classList.toggle('active');
+			}))
+				
+	
+
+
+
+
+		function toggleMenu(){
+			const menuToggle = document.querySelector('.toggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
